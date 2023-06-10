@@ -1,5 +1,7 @@
 import Greeting from "./Greeting";
 import Shouter from "./Shouter";
+import MouseTracker from "./MouseTracker";
+
 
 function App() {
   return <main>
@@ -7,6 +9,8 @@ function App() {
     <Greeting name="Beth"/>
     <Greeting name="Annie"/>
     <Shouter/>
+    <MouseTracker/>
+
     </main>;
 }
 

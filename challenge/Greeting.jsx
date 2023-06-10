@@ -1,9 +1,6 @@
-import React from 'react'
-
-
-function Greeting(props) {
+function Greeting(prop) {
   return (
-    <p>Hello {props.name}</p>
+    <p>Hello {prop.name}</p>
   )
 }
 

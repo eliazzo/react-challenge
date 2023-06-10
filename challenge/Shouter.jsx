@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-function Shouter(props) {
-  let [message, updateMessage] = useState(''); // message takes the original value and updateMessage is the state updater function
+function Shouter() {
+  const [message, setMessage] = useState('');
 
   return (
     <div>
-      <input type="text" value={message} onChange={(event) => updateMessage(event.target.value)}/>
+      <input name="message" value={message} onChange={(event) => setMessage(event.target.value)}/>
       <output>{message.toUpperCase()}</output>
     </div>
   )
